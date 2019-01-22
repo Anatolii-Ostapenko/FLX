@@ -1,36 +1,30 @@
 @media screen {
-    /*Повидаляти в кінці всі коменти*/
     div[class="tm-content-box flex-2-col"]{
         display: flex;
     }
     div[class="tm-content-box flex-2-col"] .padding-medium{
         padding-top: 200px;
     }
-    /*task2*/
     li[class="box box-bg"] h2:hover{
         color: #fff;
         background-color: #87cefa;
     }
-    /*task3*/
     p::first-letter{ 
         font-size: 30px;
         color: #87cefa;
     }
-    /*task4*/
     .tm-sidebar,.tm-banner,.tm-content-box, .blocks{
         box-shadow: 0px 0px 10px 5px gray;
     }
     .blocks div[class="tm-content-box flex-2-col"], .blocks div[class="tm-content-box flex-2-col"]+.tm-content-box{
         box-shadow: none;
     }
-    /**/
     .tm-banner{
         background-color: #f5f5f5;
     }
     .tm-banner-inner{
         background-color: #fff;
     }
-   /*task5*/
     section{
         position: relative;
     }
@@ -39,33 +33,29 @@
         position: absolute;
         top: 0;
         left: 0;
+        z-index: 5;
         border-top: 25px solid #87cefa;
         border-right: 250px solid transparent;
-        z-index: 1;
     }
-    /*task6*/
     .carousel-content .flex-item .tm-section-title{
         color: gainsboro;
         letter-spacing: 5px;
     }
-    /*task7*/
     h2+p{
         font-style: italic;
     }
-    /*task8*/
     p{
         line-height: 2em;
-        text-indent: 2em;
+        text-indent: 20px;
     }
     .padding-medium a{
         color: #000;
     }
-    /*task9*/
     .tm-content-box .padding-medium ol a:visited{
         text-decoration-line: underline;
-        
     }
     .tm-content-box .padding-medium ol a:hover{
+        text-decoration-line: underline;
         text-decoration-style: double;
         color: #6bdcff;
     }
@@ -76,15 +66,12 @@
         font-size: 10px;
         vertical-align: top;
     }
-
     .blocks .gallery-container .box-work {
-        padding: 0.5rem;
+        padding: 5px;
     }
     .boxes.gallery-container li:nth-child(even){
         background-color: #eee;
     }
-
-/*task 11*/
     .mandatory-field::after{
         content: "*";
         color: #f00;
@@ -106,7 +93,6 @@
         color: #fff;
         border: 1px solid #56BAF8;
     }
-    /*task12*/
     .tm-nav-item:hover{
         background-color: #f5f5f5;
     }
