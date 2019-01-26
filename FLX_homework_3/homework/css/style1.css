@@ -132,3 +132,7 @@ body {
           cursor: pointer;
           min-width: 200px;
           margin-top: 10px; }
+    body .main-wrapper footer {
+      font-size: 11px;
+      font-weight: inherit;
+      padding: 10px; }
