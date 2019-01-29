@@ -2,11 +2,11 @@
 body{
     font-family: 'Open Sans', sans-serif;
     margin: 0px;
-    width: 100vw;
+    overflow-x: hidden;
 }
 .header-wrapper{
     background: url(../img/sample2.jpg)no-repeat center/cover;
-    height: 100vh;
+    height: 100%;
     background-position-y: -125px;
     color: #fff;
     position: relative;
@@ -14,7 +14,7 @@ body{
 .header-wrapper .grid-container-1{
     display: grid;
     padding-top: 40px;
-    grid-template-columns: auto 200px;
+    grid-template-columns: auto 180px;
     font-size: 14px;
 }
 .header-wrapper .grid-container-1 .small-logo{
@@ -24,7 +24,8 @@ body{
 }
 .header-wrapper .user-tools{
     display: grid;
-    grid-template-columns: 100px 100px;
+    grid-template-columns: 50% 50%;
+    grid-gap: 5px;
 }
 .header-wrapper .user-tools .login, .header-wrapper .user-tools .signup{
     cursor: pointer;
@@ -32,6 +33,7 @@ body{
 .header-wrapper .grid-container-2{
     display: grid;
     grid-template-columns: auto;
+    margin-left: 15px;
 }
 .header-wrapper .grid-container-2 .logo{
     text-align: center;
@@ -50,9 +52,8 @@ body{
 .header-wrapper .grid-container-3{
     display: grid;
     grid-template-columns: auto auto auto;
-    margin-top: 180px;
     justify-content: space-around;
-    margin: 180px 50px 0px 50px;
+    margin: 182px 35px 0px 50px;
 }
 .header-wrapper .grid-container-3 a{
     border: 2px solid #fff;
@@ -77,9 +78,9 @@ body{
     width: 46vw;
     font-size: 14px;
     grid-column-start: 2;
-    margin-top: 130px;
-    z-index: 6;
-    padding-left: 15px;
+    margin-top: 126px;
+    z-index: 7;
+    padding-left: 30px;
 }
 .header-wrapper .grid-container-5{
     display: grid;
@@ -90,7 +91,7 @@ body{
     color: #000;
     z-index: 6;
     width: 400px;
-    margin: 30px 0px 0px 51px;
+    margin: 30px 0px 0px 50px;
     font-size: 18px;
 }
 .header-wrapper .grid-container-6{
@@ -102,26 +103,27 @@ body{
     z-index: 6;
     text-align: center;
     margin: 0px;
-    padding-top: 10px;
+    padding: 10px 0px 0px 15px;
 }
 main .grid-container-articles{
     display: grid;
-    grid-template-columns: 50vw 50vw;
+    grid-template-columns: 51% 49%;
     background-color: #F3F3F3;
-    padding: 20px 0px 70px 0px;
+    padding: 40px 0px 70px 0px;
 }
 main .grid-container-articles .article-img{
     position: relative;
     background: url(../img/sample.jpg)no-repeat top / cover;
-    margin-left: 50px;
+    margin: 0px 10px 0px 50px;
 }
 main .grid-container-articles .article-img .likes{
     position: absolute;
     border: 2px solid #fff;
+    background-color: rgba(0, 0, 0, 0.3);
     width: 60px;
     height: 31px;
-    right: 21px;
-    top: 24px;
+    right: 22px;
+    top: 20px;
     color: #fff;
     font-size: 14px;
     box-sizing: border-box;
@@ -134,16 +136,16 @@ main .grid-container-articles .article-img .likes p{
 }
 main .grid-container-articles .article-img .some-text{
     position: absolute;
-    bottom: 1px;
+    bottom: 5px;
     left: 20px;
     color: #fff;
     font-size: 14px;
 }
-@media only screen and (max-width: 1200px) {
+/* @media only screen and (max-width: 1200px) {
     main .grid-container-articles .article-img{
       background-size: 100% 100%
     }
-}
+} */
 main .grid-container-articles .article-list{
     display: grid;
     flex-direction: column;
@@ -151,7 +153,7 @@ main .grid-container-articles .article-list{
     text-align: center;
 }
 main .grid-container-articles .article-list p{
-    padding: 2vh 3vw 0vh 8vw;
+    padding: 2vh 3vw 0vh 7vw;
 }
 main .grid-container-articles .article-list p:nth-child(2){
     padding-top: 4vh;
@@ -163,10 +165,10 @@ main .grid-container-articles .article-list p:last-child{
     display: grid;
     grid-column-gap: 15%;
     grid-template-columns: 17vw 17vw 17vw;
-    justify-content: center;
-    margin-top: 35px;
+    justify-content: space-around;
     background-color: #fff;
     padding-bottom: 65px;
+    margin: 30px 135px 0px 150px;
 }
 .grid-container-window-box .window{
     border: 1px solid #C6C6C6;
@@ -192,7 +194,7 @@ main .grid-container-articles .article-list p:last-child{
 .subscription-newsletter{
     background-color: #F3F3F3;
     font-size: 14px;
-    padding: 30px 20px 45px 25px;
+    padding: 32px 5px 45px 25px;
     
 }
 .subscription-newsletter p{
@@ -226,11 +228,12 @@ main .grid-container-articles .article-list p:last-child{
 }
 footer{
     padding: 50px;
+    padding-right: 33px;
 }
 footer .grid-container-navigation{
     display: grid;
     grid-template-columns: 25% 25% 20% 30%;
-    padding-top: 45px;
+    padding-top: 43px;
 }
 .grid-container-navigation .container:nth-child(2){
     padding-left: 5px;
@@ -263,7 +266,6 @@ footer .grid-container-navigation{
     width: 85px;
     margin: 7px 0px 0px 5px;
     background-color: #097774;
-    
     color: #fff;
     font-weight: 600;
     cursor: pointer;
