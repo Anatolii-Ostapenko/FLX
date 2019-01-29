@@ -141,11 +141,6 @@ main .grid-container-articles .article-img .some-text{
     color: #fff;
     font-size: 14px;
 }
-/* @media only screen and (max-width: 1200px) {
-    main .grid-container-articles .article-img{
-      background-size: 100% 100%
-    }
-} */
 main .grid-container-articles .article-list{
     display: grid;
     flex-direction: column;
