@@ -1,6 +1,5 @@
 let priceWithoutdiscount = prompt('Insert full cost:', 0);
 let discount = prompt('Insert discount:', 0);
-
 validation(priceWithoutdiscount, discount);
 function validation(priceWithoutdiscount, discount){
     priceWithoutdiscount = priceWithoutdiscount * 1;
@@ -17,7 +16,6 @@ function totalPrice(priceWithoutdiscount, discount){
     let amountOfDiscount = priceWithoutdiscount * convertToInterest;
     let toDecimal = Math.floor(amountOfDiscount*100)/100;
     let result = (priceWithoutdiscount - toDecimal).toFixed(2);
-    
     alert('Price without discount: '+ priceWithoutdiscount+'\nDiscount: '+ discount +
     '%\nPrice with discount: '+ result+'\nSaved: '+ toDecimal +'');
 }
