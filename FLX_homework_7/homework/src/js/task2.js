@@ -1,5 +1,4 @@
 let playGame = confirm("Do you want to play a game?");
-let maxWinnings = 10;
 let playOrNotPlay;
 if(playGame){
     while(playGame){
@@ -7,6 +6,7 @@ if(playGame){
         let maxWinOnAttemt = 10;
         let attempted = 3;
         let totalPrize = 0;
+	let maxWinnings = 10;
         while(attempted > 0){
             let randomNumber = Math.floor(Math.random() * maxNumber);
             let enterNumber = parseFloat(prompt('Enter a number from 0 to ' + maxNumber +
