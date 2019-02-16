@@ -129,4 +129,4 @@ function isEvenMonth(newDate){
     let takeMonth = newDate.getMonth() + 1;
     return takeMonth % 2 === 0;
 }
-isEvenMonth(new Date('2019-01-27T01:10:00'))
+isEvenMonth(new Date('2019-02-27T01:10:00'))
