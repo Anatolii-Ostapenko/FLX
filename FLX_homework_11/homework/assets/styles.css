@@ -1,0 +1,90 @@
+.form-body {
+    border: 1px solid #000000;
+    width: 40vw;
+    margin: 0 auto;
+    padding: 0 3vw;
+}
+
+.header h1 span {
+    text-transform: uppercase;
+}
+.list-full{
+    font-size: 17px;
+    visibility: hidden;
+}
+.header h1 {
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.field-add-action {
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+}
+
+.field-add-action .add-action {
+    height: 25px;
+    margin-right: 10px;
+    width: 100%;
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+.field-add-action .material-icons {
+    font-size: 40px;
+    cursor: pointer;
+}
+
+hr {
+    border: 1px solid #000000;
+}
+
+#list {
+    padding-left: 0px;
+    list-style-type: none;
+}
+
+#list li {
+    display: flex;
+    position: relative;
+    align-items: center;
+    list-style-type: none;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+#list input[type='checkbox'] {
+    height: 25px;
+    width: 25px;
+    margin-right: 10px
+}
+
+#list i {
+    font-size: 30px;
+    position: absolute;
+    right: 0px;
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer img {
+    height: 80px;
+    margin: 50px 0 20px 0;
+}
+
+[draggable] {
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    -khtml-user-drag: element;
+    -webkit-user-drag: element;
+}
+
+.listItem.over {
+    border: 2px dashed #000;
+    border-top: 2px solid blue;
+}
