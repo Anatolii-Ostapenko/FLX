@@ -1,0 +1,49 @@
+#root{
+    text-align: center;
+}
+#root h1{
+    font-size: 45px;
+}
+#root .add-task{
+    font-size: 25px;
+    padding: 0 25px;
+    border-radius: 5px;
+}
+#root .todo-is-empty{
+    font-size: 30px;
+}
+#root .description{
+    height: 30px;
+    width: 320px;
+    border-radius: 5px;
+    font-size: 20px;
+    padding-left: 10px;
+}
+#root .cancel, #root .save{
+    height: 30px;
+    font-size: 24px;
+    padding: 0 15px;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+#root .cancel{
+    margin-right: 30px;
+}
+#root .list{
+    list-style-type: none;
+    font-size: 30px;
+    padding-left: 0px;
+}
+#root .list li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+#root .list .mark-done, #root .list .delete{
+    width: 30px;
+    height: 30px;
+}
+#root .list li .edit-todo{
+    width: 250px;
+}
